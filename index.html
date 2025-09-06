@@ -4,8 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .product{
+      padding: 150px;
+    }
+    label{
+     padding: 10px;
+      text-align: end;
+      display: flex;
+    
+    }
+  input{
+    margin-top:-20px ;
+    display: flex;
+    padding: 7px;
+    margin-right: 60%;
+    }
+    h1{
+      margin-right: 70%;
+    }
+    input[type="submit"]{
+       margin-right: 30%;
+       padding-right: 20px;
+       background-color: black;
+       color: white;
+       border: none;
+       border-radius: 4px;
+       text-align: center;
+       font-size: 20px;
+       cursor: pointer;
+      
+    }
+    input[type="submit"]:hover{
+      background-color: chocolate;
+      color: black;
+    }
+    ul li{
+      list-style: none;
+      margin-right: 70%;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <div class="product">
+    <center>
+    <b>
+     <u> <h1>To List</h1></u>
+      <label for="">Product Name:</label>
+      <input type="text" placeholder="Enter Product" id="productName"><br>
+      <label for="">Price:</label>
+      <input type="number" placeholder="Enter Cost" id="productCost">
+      <input type="submit" value="Add" onclick="add()">
+     
+      <hr>
+      <div class="products">
+        <!-- <ul><li>Maize 500$</li>
+        <li>Rice 200$</li></ul> -->
+        <!-- <p id="prName"></p>
+         <p id="prCost"></p> -->
+         <ul><li id="prName"></li>
+        <li id="prCost"></li>
+        </ul>
+
+
+      </div>
+    </b>
+  </div>
+  </center>
+  <script src="index.js"></script>
 </body>
 </html>
